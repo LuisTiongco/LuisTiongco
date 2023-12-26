@@ -13,15 +13,15 @@ Hello! I am Luis Gerard R. Tiongco, currently a 2nd year BSIT Student of [Mapúa
 ## ♏ More about me ♏
 - 🎂 I was born on **November 12, 2003**, so I'm currently 20 years old.
 
-- 🎹 My hobbies include playing the Piano and;
+- 🎹 My hobbies include playing the **Piano** and;
 
-- 👾 Playing video games on the laptop. 
+- 👾 Playing **video games** on the laptop. 
 
-- 💻 I am interested in learning about web development.
+- 💻 I am interested in learning about **Web development** because I know that it is essential and will open up to job opportunities in the future.
 
-- 🎷 I do not usually have an all time favorite song nor genre but right now I am enjoying litening to jazz versions of songs.
+- 🎷 I do not usually have an all time favorite song nor genre but right now I am enjoying litening to **Jazz versions** of songs.
 
-- 🎵 I really like and enjoy old 80's songs too as I am exposed to them by my parents.
+- 🎵 I really like and enjoy **old 80's songs** too as I am exposed to them by my parents.
 
 ## 👨‍💻 Languages I know (some still learning) 👨‍💻
 
@@ -44,46 +44,52 @@ Hello! I am Luis Gerard R. Tiongco, currently a 2nd year BSIT Student of [Mapúa
 
 This cheat sheet provides a quick reference to Git commands I use.
 
-1. `git init` - This is the very first step to start tracking changes in your project. It initializes a new and empty Git repository in your local repository. It has **no parameters**, but it is needed to specify which directory to initialize a Git repository first before running **git init**.
+1. `git init` - The **git init** command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
     #### Example:
-    > cd ~/Repositories/my-awesome-project     
+    > cd ~/Repositories/MyProject   
     > git init
 
-<br />
+<br>
 
-2. `git clone [url]` - If you want to work on an existing remote repository that has Git initialized, use **git clone**. This command **downloads a remote repository to your local machine**. Its parameter needs you to provide the **URL** of the repository you want to clone, and like git init, it is also important to specify which directory you want Git to download the project.
+2. `git clone [url]` - If a project has already been set up in a central repository, the **git clone** command is the most common way for users to obtain a development copy.
     #### Example:
     > cd ~/Repositories    
     > git clone `https://github.com/LuisTiongco/LuisTiongco.git`
 
-<br />
+<br>
 
-3. `git add [file]` - After making changes to your files, you need to tell Git which changes you want to track or stage. Use **git add [file]** to add specific files or simply **git add .** to add all modified files in the local repository to the staging area.
+3. `git add [file]` - The **git add** command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. 
     #### Example:
-    > git add .
+    > git add .     
+    > git hello.py
 
-<br />
+<br>
 
-4. `git commit -m "[description]"` - Once you've added the desired changes to the staging area, use **git commit** to take a **snapshot** of those changes and store them in the **Git history of your local repository**. It is good practice to always provide a clear and concise message describing the changes you've made using the **-m** flag.
+4. `git commit -m "[description]"` - The **git commit** command captures a snapshot of the project's currently staged changes. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to.
+
+
     #### Example:
-    > git commit -m "Added a new super awesome feature"
+    > git commit -m "Added a new feature"
 
-<br />
+<br>
 
-5. `git push [alias] [branch]` - After committing your changes locally, you can use **git push** to push commits to a remote repository. Additionally, you have the option to specify the **remote alias** (often "origin") and the **branch you want to push your changes to** (e.g., "main" or a specific "branch") by establishing an upstream relationship using the **-u** flag. Though not mandatory, this is useful as it allows you to use **git push only** without specifying the remote name and branch in the future.
+5. `git push [remote] [branch]` - The **git push** command pushes the specified branch to, along with all of the necessary commits and internal objects. This creates a local branch in the destination repository. To prevent you from overwriting commits, Git won’t let you push when it results in a non-fast-forward merge in the destination repository.
     #### Example:
     > git push -u origin main
 
-<br />
+<br>
 
 6. `git status` - To check the current state of your working directory and the staging area. It shows you which files have been **modified**, which are **staged for commit**, and which are **untracked by Git**. It is a local operation to view the status of your local repository and it does **not require any parameters**.
     #### Example:
     > git status
 
+<br>
+
 6. `git log` - To view the **commit history** of your repository. This command will display in the terminal, a list of commits in chronological order. For each item in this list, it will contain commit messages, authors, and dates. You can run the command **as it is** to show everything or **put parameters** (e.g., --oneline, --author=[username], --since="[date]") if you have something specific to look for.
     #### Example:
     > git log       
     > git log --since="2023-12-20"
+    
 
 <!--
 **LuisTiongco/LuisTiongco** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
