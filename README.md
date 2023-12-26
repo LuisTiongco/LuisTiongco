@@ -74,6 +74,16 @@ This cheat sheet provides a quick reference to Git commands I use.
     #### Example:
     > git push -u origin main
 
+<br />
+
+6. `git status` - To check the current state of your working directory and the staging area. It shows you which files have been **modified**, which are **staged for commit**, and which are **untracked by Git**. It is a local operation to view the status of your local repository and it does **not require any parameters**.
+    #### Example:
+    > git status
+
+6. `git log` - To view the **commit history** of your repository. This command will display in the terminal, a list of commits in chronological order. For each item in this list, it will contain commit messages, authors, and dates. You can run the command **as it is** to show everything or **put parameters** (e.g., --oneline, --author=[username], --since="[date]") if you have something specific to look for.
+    #### Example:
+    > git log       
+    > git log --since="2023-12-20"
 
 <!--
 **LuisTiongco/LuisTiongco** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
