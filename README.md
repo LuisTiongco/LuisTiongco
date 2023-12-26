@@ -85,7 +85,7 @@ This cheat sheet provides a quick reference to Git commands I use.
 
 <br>
 
-6. `git log` - To view the **commit history** of your repository. This command will display in the terminal, a list of commits in chronological order. For each item in this list, it will contain commit messages, authors, and dates. You can run the command **as it is** to show everything or **put parameters** (e.g., --oneline, --author=[username], --since="[date]") if you have something specific to look for.
+7. `git log` - To view the **commit history** of your repository. This command will display in the terminal, a list of commits in chronological order. For each item in this list, it will contain commit messages, authors, and dates. You can run the command **as it is** to show everything or **put parameters** (e.g., --oneline, --author=[username], --since="[date]") if you have something specific to look for.
     #### Example:
     > git log       
     > git log --since="2023-12-20"
